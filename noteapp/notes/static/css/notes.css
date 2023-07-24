@@ -1,0 +1,26 @@
+div {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+button {
+    margin-left: 100px;
+}
+
+.content {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.asteriskField {
+    display: none;
+}
+
+form {
+
+}
