@@ -1,5 +1,5 @@
 from django.utils import timezone
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, redirect
 from .models import Note
 from .forms import NoteForm
 
