@@ -1,5 +1,5 @@
 from django.utils import timezone
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Note
 from .forms import NoteForm
 
@@ -24,6 +24,6 @@ def index(request, note_id=None):
 
 
 def delete(request, note_id):
-    obj = Note.objects.get(id=note_id)
+    obj = get_object_or_404(Note, id=note_id)
     obj.delete()
     return redirect("/")
